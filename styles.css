@@ -1,0 +1,328 @@
+/* ==========================
+   BREATOR WEBSITE v1.0
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#09090F;
+    --bg2:#11111B;
+
+    --primary:#8B5CF6;
+    --primary-light:#A78BFA;
+
+    --text:#F8FAFC;
+    --text-light:#CBD5E1;
+
+    --border:#27272A;
+
+    --max-width:1100px;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+Container
+========================== */
+
+.container{
+
+    width:90%;
+    max-width:var(--max-width);
+
+    margin:auto;
+
+}
+
+/* ==========================
+Hero
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:
+        linear-gradient(rgba(9,9,15,.85),rgba(9,9,15,.95)),
+        url("assets/banner.png") center/cover no-repeat;
+
+}
+
+.logo{
+
+    width:120px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:4rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.tagline{
+
+    color:var(--primary-light);
+
+    font-size:1.3rem;
+
+    margin-bottom:25px;
+
+}
+
+.description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text-light);
+
+    font-size:1.05rem;
+
+}
+
+/* ==========================
+Buttons
+========================== */
+
+.buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:#7C3AED;
+
+}
+
+.secondary{
+
+    border:1px solid var(--border);
+
+    color:white;
+
+}
+
+.secondary:hover{
+
+    background:var(--bg2);
+
+}
+
+/* ==========================
+Sections
+========================== */
+
+.section{
+
+    padding:100px 0;
+
+}
+
+.dark{
+
+    background:var(--bg2);
+
+}
+
+.section h2{
+
+    font-family:'Poppins';
+
+    font-size:2.2rem;
+
+    margin-bottom:25px;
+
+}
+
+.section p{
+
+    color:var(--text-light);
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+Origin
+========================== */
+
+.origin{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.result{
+
+    color:var(--primary-light);
+
+}
+
+.plus,
+.equal{
+
+    color:var(--primary);
+
+}
+
+/* ==========================
+Quote
+========================== */
+
+blockquote{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:600;
+
+    color:var(--primary-light);
+
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer{
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+    padding:40px 0;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:var(--text-light);
+
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:2.7rem;
+
+}
+
+.tagline{
+
+    font-size:1.1rem;
+
+}
+
+.origin{
+
+    font-size:1.3rem;
+
+    gap:10px;
+
+}
+
+blockquote{
+
+    font-size:1.4rem;
+
+}
+
+.section{
+
+    padding:70px 0;
+
+}
+
+}
